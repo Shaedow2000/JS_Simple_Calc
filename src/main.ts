@@ -14,6 +14,8 @@ function BtnCLickEvent(): void {
         calcScreen.innerHTML += symbol;
       } else if ( symbol === 'AC' ) {
         calcScreen.innerHTML = '';
+      } else if ( symbol === 'DEL' ) {
+        calcScreen.innerHTML = calcScreen.innerHTML.slice( 0, -1 );
       }
     } );
   }
