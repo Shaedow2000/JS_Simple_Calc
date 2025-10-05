@@ -12,6 +12,8 @@ function BtnCLickEvent(): void {
 
       if ( symbol !== '=' && symbol !== 'AC' && symbol !== 'DEL' ) {
         calcScreen.innerHTML += symbol;
+      } else if ( symbol === 'AC' ) {
+        calcScreen.innerHTML = '';
       }
     } );
   }
